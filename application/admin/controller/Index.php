@@ -2,14 +2,13 @@
 
 namespace app\admin\controller;
 
-class Index
+use think\Controller;
+
+class Index extends Controller
 {
     public function index()
     {
-        return 'admin 方法';
+        return $this->fetch();
     }
 
-    public function index2(){
-        return '4567';
-    }
 }
